@@ -7,10 +7,9 @@ Random random = new Random();
 int n = random.Next(5,11);
 Console.WriteLine($"n = {n}");
 
-int counter = 1;
-Recurse(n, counter);
+Recurse(n);
 
-void Recurse(int n, int counter)
+void Recurse(int n, int counter=0)
 {
     Console.WriteLine($"n = {counter}");
     if (counter >= n)
